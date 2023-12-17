@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Serial Data Monitor</title>
+  </head>
+  <body>
+    <h1>Serial Data Monitor</h1>
+    <ul id="data-list"></ul>
+    <script>
+      const socket = io();
+      const dataList = document.getElementById('data-list');
+      socket.on('data', (data) => {
+        const li = document.createElement('li');
+        li.innerText = data;
+        dataList.appendChild(li);
+      });
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+  </body>
+</html>

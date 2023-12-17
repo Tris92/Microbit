@@ -1,0 +1,19 @@
+{
+  "name": "microbit-onlinetuto",
+  "version": "1.0.0",
+  "description": "microbit tutorial for serial port with nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "microbit"
+  ],
+  "author": "tristan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "serialport": "^10.5.0",
+    "socket.io": "^4.6.0"
+  }
+}
